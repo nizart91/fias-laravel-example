@@ -1,0 +1,71 @@
+version: '3.7'
+
+services:
+  php:
+    container_name: fias-laravel-php
+    image: fias-laravel-php
+    networks:
+      - fias_laravel_network
+    depends_on:
+      - mysql
+      - postgres
+    build:
+      context: php
+      args:
+        HOST_USER_ID: ${DOCKER_USER_ID}
+        HOST_GROUP_ID: ${DOCKER_GROUP_ID}
+    volumes:
+      - ${DOCKER_APP_PATH}:/var/app:cached
+
+  nginx:
+    container_name: fias-laravel-nginx
+    image: fias-laravel-nginx
+    networks:
+      - fias_laravel_network
+    build:
+      context: nginx
+    ports:
+      - 8080:80
+    volumes:
+      - ${DOCKER_APP_PATH}:/var/app:cached
+
+  postgres:
+    container_name: fias-laravel-postgres
+    image: fias-laravel-postgres
+    networks:
+      - fias_laravel_network
+    build:
+      context: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - fias_laravel_postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${DOCKER_DB_USER}
+      POSTGRES_PASSWORD: ${DOCKER_DB_PASSWORD}
+      POSTGRES_DB: ${DOCKER_DB_NAME}
+      PGDATA: /var/lib/postgresql/data/pgdata
+
+  mysql:
+    container_name: fias-laravel-mysql
+    image: fias-laravel-mysql
+    networks:
+      - fias_laravel_network
+    build:
+      context: mysql
+    ports:
+      - 3333:3306
+    volumes:
+      - fias_laravel_mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DOCKER_DB_PASSWORD}
+      MYSQL_DATABASE: ${DOCKER_DB_NAME}
+      MYSQL_USER: ${DOCKER_DB_USER}
+      MYSQL_PASSWORD: ${DOCKER_DB_PASSWORD}
+
+volumes:
+  fias_laravel_postgres:
+  fias_laravel_mysql:
+
+networks:
+  fias_laravel_network:
