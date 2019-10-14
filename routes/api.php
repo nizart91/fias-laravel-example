@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,22 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['prefix' => 'api/', 'middleware' => []], function ($app) {
+    Route::resource('actualStatus', 'ActualStatusController')->only(['index', 'show']);
+    Route::resource('addressObject', 'AddressObjectController')->only(['index', 'show']);
+    Route::resource('addressObjectType', 'AddressObjectTypeController')->only(['index', 'show']);
+    Route::resource('centerStatus', 'CenterStatusController')->only(['index', 'show']);
+    Route::resource('currentStatus', 'CurrentStatusController')->only(['index', 'show']);
+    Route::resource('estateStatus', 'EstateStatusController')->only(['index', 'show']);
+    Route::resource('flatType', 'FlatTypeController')->only(['index', 'show']);
+    Route::resource('house', 'HouseController')->only(['index', 'show']);
+    Route::resource('houseStateStatus', 'HouseStateStatusController')->only(['index', 'show']);
+    Route::resource('intervalStatus', 'IntervalStatusController')->only(['index', 'show']);
+    Route::resource('normativeDocument', 'NormativeDocumentController')->only(['index', 'show']);
+    Route::resource('normativeDocumentType', 'NormativeDocumentTypeController')->only(['index', 'show']);
+    Route::resource('operationStatus', 'OperationStatusController')->only(['index', 'show']);
+    Route::resource('room', 'RoomController')->only(['index', 'show']);
+    Route::resource('roomType', 'RoomTypeController')->only(['index', 'show']);
+    Route::resource('stead', 'SteadController')->only(['index', 'show']);
+    Route::resource('structureStatus', 'StructureStatusController')->only(['index', 'show']);
 });
