@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix' => 'api/', 'middleware' => []], function ($app) {
+Route::group(['middleware' => []], function ($app) {
     Route::resource('actualStatus', 'ActualStatusController')->only(['index', 'show']);
     Route::resource('addressObject', 'AddressObjectController')->only(['index', 'show']);
     Route::resource('addressObjectType', 'AddressObjectTypeController')->only(['index', 'show']);

@@ -2,17 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Response;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Liquetsoft\Fias\Laravel\LiquetsoftFiasBundle\Entity\HouseStateStatus;
+use Liquetsoft\Fias\Laravel\LiquetsoftFiasBundle\Resource\HouseStateStatus as Resource;
 
 class HouseStateStatusController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return Response
+     * @return AnonymousResourceCollection
      */
     public function index()
     {
+        return Resource::collection(HouseStateStatus::query()->paginate(50));
     }
 
     /**
@@ -20,9 +23,10 @@ class HouseStateStatusController extends Controller
      *
      * @param int $id
      *
-     * @return Response
+     * @return resource
      */
-    public function show($id)
+    public function show(int $id)
     {
+        return new Resource(HouseStateStatus::query()->find($id));
     }
 }

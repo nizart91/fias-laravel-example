@@ -2,17 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Response;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Liquetsoft\Fias\Laravel\LiquetsoftFiasBundle\Entity\CenterStatus;
+use Liquetsoft\Fias\Laravel\LiquetsoftFiasBundle\Resource\CenterStatus as Resource;
 
 class CenterStatusController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return Response
+     * @return AnonymousResourceCollection
      */
     public function index()
     {
+        return Resource::collection(CenterStatus::query()->paginate(50));
     }
 
     /**
@@ -20,9 +23,10 @@ class CenterStatusController extends Controller
      *
      * @param int $id
      *
-     * @return Response
+     * @return resource
      */
-    public function show($id)
+    public function show(int $id)
     {
+        return new Resource(CenterStatus::query()->find($id));
     }
 }

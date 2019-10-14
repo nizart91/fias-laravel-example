@@ -2,17 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Response;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Liquetsoft\Fias\Laravel\LiquetsoftFiasBundle\Entity\CurrentStatus;
+use Liquetsoft\Fias\Laravel\LiquetsoftFiasBundle\Resource\CurrentStatus as Resource;
 
 class CurrentStatusController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return Response
+     * @return AnonymousResourceCollection
      */
     public function index()
     {
+        return Resource::collection(CurrentStatus::query()->paginate(50));
     }
 
     /**
@@ -20,9 +23,10 @@ class CurrentStatusController extends Controller
      *
      * @param int $id
      *
-     * @return Response
+     * @return resource
      */
-    public function show($id)
+    public function show(int $id)
     {
+        return new Resource(CurrentStatus::query()->find($id));
     }
 }
