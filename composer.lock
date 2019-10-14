@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a854133dd359f923523e6013e6f3cc00",
+    "content-hash": "418d4c7495207b353e877a71b27b85a5",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -814,16 +814,16 @@
         },
         {
             "name": "liquetsoft/fias-laravel",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liquetsoft/fias-laravel.git",
-                "reference": "141a9d941b23ac54f683d3fe1de8a2e5a60cb939"
+                "reference": "cb75e44d5b6bc612b49e619ea1c0af4e451ab395"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liquetsoft/fias-laravel/zipball/141a9d941b23ac54f683d3fe1de8a2e5a60cb939",
-                "reference": "141a9d941b23ac54f683d3fe1de8a2e5a60cb939",
+                "url": "https://api.github.com/repos/liquetsoft/fias-laravel/zipball/cb75e44d5b6bc612b49e619ea1c0af4e451ab395",
+                "reference": "cb75e44d5b6bc612b49e619ea1c0af4e451ab395",
                 "shasum": ""
             },
             "require": {
@@ -864,7 +864,7 @@
                 "laravel",
                 "php"
             ],
-            "time": "2019-10-13T21:51:28+00:00"
+            "time": "2019-10-14T07:41:44+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -5325,9 +5325,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "liquetsoft/fias-laravel": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
