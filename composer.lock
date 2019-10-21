@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0c697ebe651ef763147153f75727195",
+    "content-hash": "b688e1ad6a8f9e56df03456cf97a4684",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -470,16 +470,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.2.0",
+            "version": "v6.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "cacce5a77fa94793cf25345d67387632134d75dd"
+                "reference": "80914c430fb5e49f492812d704ba6aeec03d80a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/cacce5a77fa94793cf25345d67387632134d75dd",
-                "reference": "cacce5a77fa94793cf25345d67387632134d75dd",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/80914c430fb5e49f492812d704ba6aeec03d80a2",
+                "reference": "80914c430fb5e49f492812d704ba6aeec03d80a2",
                 "shasum": ""
             },
             "require": {
@@ -612,7 +612,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-10-08T12:50:06+00:00"
+            "time": "2019-10-15T13:38:24+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -679,16 +679,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.56",
+            "version": "1.0.57",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "90e3f83cb10ef6b058d70f95267030e7a6236518"
+                "reference": "0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/90e3f83cb10ef6b058d70f95267030e7a6236518",
-                "reference": "90e3f83cb10ef6b058d70f95267030e7a6236518",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a",
+                "reference": "0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a",
                 "shasum": ""
             },
             "require": {
@@ -759,20 +759,20 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-10-12T13:05:59+00:00"
+            "time": "2019-10-16T21:01:05+00:00"
         },
         {
             "name": "liquetsoft/fias-component",
-            "version": "v2.5.9",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liquetsoft/fias-component.git",
-                "reference": "c188762186974fc6866bda8c345892172ee9d93a"
+                "reference": "3a0f34b73f05ba82520b57bddd2df20e6ca39333"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liquetsoft/fias-component/zipball/c188762186974fc6866bda8c345892172ee9d93a",
-                "reference": "c188762186974fc6866bda8c345892172ee9d93a",
+                "url": "https://api.github.com/repos/liquetsoft/fias-component/zipball/3a0f34b73f05ba82520b57bddd2df20e6ca39333",
+                "reference": "3a0f34b73f05ba82520b57bddd2df20e6ca39333",
                 "shasum": ""
             },
             "require": {
@@ -810,27 +810,27 @@
                 "fias",
                 "php"
             ],
-            "time": "2019-10-08T16:33:29+00:00"
+            "time": "2019-10-21T12:19:55+00:00"
         },
         {
             "name": "liquetsoft/fias-laravel",
-            "version": "v1.0.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liquetsoft/fias-laravel.git",
-                "reference": "cb75e44d5b6bc612b49e619ea1c0af4e451ab395"
+                "reference": "1646c20d04f2b9441728c71e16bb90d8f023dbc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liquetsoft/fias-laravel/zipball/cb75e44d5b6bc612b49e619ea1c0af4e451ab395",
-                "reference": "cb75e44d5b6bc612b49e619ea1c0af4e451ab395",
+                "url": "https://api.github.com/repos/liquetsoft/fias-laravel/zipball/1646c20d04f2b9441728c71e16bb90d8f023dbc4",
+                "reference": "1646c20d04f2b9441728c71e16bb90d8f023dbc4",
                 "shasum": ""
             },
             "require": {
                 "ext-soap": "*",
                 "illuminate/database": "^5.8||^6.0",
                 "laravel/framework": "^5.8||^6.0",
-                "liquetsoft/fias-component": "^2.5",
+                "liquetsoft/fias-component": "^3.0",
                 "php": ">=7.2.0"
             },
             "require-dev": {
@@ -864,7 +864,7 @@
                 "laravel",
                 "php"
             ],
-            "time": "2019-10-14T07:41:44+00:00"
+            "time": "2019-10-21T12:51:46+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -949,16 +949,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.25.1",
+            "version": "2.25.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1"
+                "reference": "d07636581795383e2fea2d711212d30f941f2039"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1",
-                "reference": "d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d07636581795383e2fea2d711212d30f941f2039",
+                "reference": "d07636581795383e2fea2d711212d30f941f2039",
                 "shasum": ""
             },
             "require": {
@@ -1012,7 +1012,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-10-05T15:52:23+00:00"
+            "time": "2019-10-20T11:05:44+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -1067,16 +1067,16 @@
         },
         {
             "name": "opis/closure",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "60a97fff133b1669a5b1776aa8ab06db3f3962b7"
+                "reference": "e79f851749c3caa836d7ccc01ede5828feb762c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/60a97fff133b1669a5b1776aa8ab06db3f3962b7",
-                "reference": "60a97fff133b1669a5b1776aa8ab06db3f3962b7",
+                "url": "https://api.github.com/repos/opis/closure/zipball/e79f851749c3caa836d7ccc01ede5828feb762c7",
+                "reference": "e79f851749c3caa836d7ccc01ede5828feb762c7",
                 "shasum": ""
             },
             "require": {
@@ -1124,7 +1124,7 @@
                 "serialization",
                 "serialize"
             ],
-            "time": "2019-09-02T21:07:33+00:00"
+            "time": "2019-10-19T18:38:51+00:00"
         },
         {
             "name": "paragonie/random_compat",

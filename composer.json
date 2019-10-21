@@ -12,7 +12,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
-        "liquetsoft/fias-laravel": "^1.0"
+        "liquetsoft/fias-laravel": "^2.0"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
